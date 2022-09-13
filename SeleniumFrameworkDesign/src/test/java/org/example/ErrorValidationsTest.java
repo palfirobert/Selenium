@@ -18,7 +18,7 @@ public class ErrorValidationsTest extends BaseTest {
     public void submitOrder() {
         logInPage.logIn("palfi.robert14@yahoo.com","Robertpalfi151");
         String toastMessage= logInPage.getErrorMessage();
-        Assert.assertEquals(toastMessage,"Incorrectt email or password.");
+        Assert.assertEquals(toastMessage,"Incorrect email or password.");
 
 
     }
