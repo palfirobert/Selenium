@@ -1,40 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-13T17:52:14 EEST" name="Suite" finished-at="2022-09-13T17:52:27 EEST" duration-ms="12654">
+  <suite started-at="2022-09-14T16:28:19 EEST" name="Surefire suite" finished-at="2022-09-14T16:28:29 EEST" duration-ms="10140">
     <groups>
-      <group name="ErrorHandling">
-        <method signature="ErrorValidationsTest.submitOrder()[pri:0, instance:org.example.ErrorValidationsTest@1c33c17b]" name="submitOrder" class="org.example.ErrorValidationsTest"/>
-      </group> <!-- ErrorHandling -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@6404f418]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-13T17:52:14 EEST" name="Error validations" finished-at="2022-09-13T17:52:27 EEST" duration-ms="12654">
-      <class name="org.example.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:org.example.ErrorValidationsTest@1c33c17b]" started-at="2022-09-13T17:52:14 EEST" name="launchApplication" finished-at="2022-09-13T17:52:20 EEST" duration-ms="5219" status="PASS">
+    <test started-at="2022-09-14T16:28:19 EEST" name="Surefire test" finished-at="2022-09-14T16:28:29 EEST" duration-ms="10140">
+      <class name="cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@6404f418]" started-at="2022-09-14T16:28:19 EEST" name="setUpClass" finished-at="2022-09-14T16:28:20 EEST" duration-ms="972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@59845579]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder()[pri:0, instance:org.example.ErrorValidationsTest@1c33c17b]" started-at="2022-09-13T17:52:20 EEST" name="submitOrder" finished-at="2022-09-13T17:52:20 EEST" duration-ms="833" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@6404f418]" started-at="2022-09-14T16:28:20 EEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T16:28:29 EEST" duration-ms="9018" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive Test of Submitting the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce Website"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:org.example.ErrorValidationsTest@1c33c17b]" started-at="2022-09-13T17:52:20 EEST" name="quit" finished-at="2022-09-13T17:52:21 EEST" duration-ms="108" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@6404f418]" started-at="2022-09-14T16:28:29 EEST" name="tearDownClass" finished-at="2022-09-14T16:28:29 EEST" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quit -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:org.example.ErrorValidationsTest@1c33c17b]" started-at="2022-09-13T17:52:21 EEST" name="launchApplication" finished-at="2022-09-13T17:52:24 EEST" duration-ms="3219" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="productErrorValidation()[pri:0, instance:org.example.ErrorValidationsTest@1c33c17b]" started-at="2022-09-13T17:52:24 EEST" name="productErrorValidation" finished-at="2022-09-13T17:52:27 EEST" depends-on-methods="org.example.ErrorValidationsTest.submitOrder" duration-ms="3048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productErrorValidation -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:org.example.ErrorValidationsTest@1c33c17b]" started-at="2022-09-13T17:52:27 EEST" name="quit" finished-at="2022-09-13T17:52:27 EEST" duration-ms="132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- org.example.ErrorValidationsTest -->
-    </test> <!-- Error validations -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

@@ -23,7 +23,7 @@ public class ErrorValidationsTest extends BaseTest {
 
     }
 
-    @Test(dependsOnMethods = {"submitOrder"})
+    @Test()
     public void productErrorValidation()
     {   logInPage.clearInput();
         logInPage.logIn("palfi.robert14@yahoo.com","Robertpalfi15");
